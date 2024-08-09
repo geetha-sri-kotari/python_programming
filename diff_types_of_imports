@@ -1,0 +1,18 @@
+# import module
+
+import math
+# from module import
+from math import *
+# import module as alias name
+import math as m
+# important contents of modules
+from math import gcd, lcm
+
+print(math.sqrt(25))    #1
+print(sqrt(77))         #2
+print(m.sqrt(64))       #3
+print(gcd(1, 2, 3, 4, 5))   #4
+print(lcm(12, 18))
+
+lst = [10, 20, 30]
+print(sum(lst))

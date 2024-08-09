@@ -1,0 +1,65 @@
+# loops :
+#for and while
+
+# while loop
+#initialization, condition, updation
+
+i = 1
+while i <= 5:
+    print(i, end = ' ')   #end = ' ' for giving space otherwise it prints in next line
+    i = i + 1             # i += 1 - updation
+
+# Number of digits
+# 2 ways
+number = 123456
+print(len(str(number)))
+j = 1
+while j <= 10:
+    if j == 7:
+        break
+    print(j, end = ' ')
+    j += 1
+
+# for loop
+# value based looping
+
+names = ['krish', 'shiva', 'sai', 'lakshmi']
+for name in names:
+    print(name, end = ' ')
+
+string = "hello world"
+for i in string:
+    print(i, '-->', ord(i))
+
+# range function
+# range( stop )
+# range( start, stop, step )
+# range( start, stop, step )
+# always excludes end bound
+# when start is not specified it is defaulted to 0
+# when step is not specified it is defaulted to 1
+
+r = range(10)    # stop - 10, it stops at 10-1, start = 0, step = 1
+print(r)
+print(list(r))
+for index in r:
+    print(index, end = ' ')
+
+rr = range(10, 21, 2)
+for k in rr:
+    print(k, end = ' ')
+
+
+# print in reverse
+for ii in range(20, 10, -1):
+    print(i, end = ' ')
+
+# a to b
+a, b = map(int, input().split())
+for val in range(a, b + 1):
+    print(val, end = ' ')
+
+    # b to a
+a, b = map(int, input().split())
+for val in range(b, a-1, -1):
+    print(val, end = ' ')
